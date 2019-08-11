@@ -1,0 +1,23 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Hello world</h1>
+    <script>
+        const name = document.cookie.split('=')[1];
+        let node = document.createElement('div');
+        if(name == 'hrithik'){
+            let text = document.createTextNode(`your name is ola ${name}`);
+            node.appendChild(text);
+        }else{
+            let text = document.createTextNode(`hahah sucker!`);
+            node.appendChild(text);
+        }
+        document.body.appendChild(node);
+    </script>
+</body>
+</html>
